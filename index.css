@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*总盒子*/
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* 头部 */
+.header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #354457;
+}
+
+.header .logo {
+  width: 100%;
+  height: 70px;
+  font-size: 14px;
+  color: #b3bcc5;
+}
+
+.header .logo img {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* 导航 */
+.menu {
+  float: left;
+  width: 200px;
+  height: 100%;
+  background-color: #4d5e70;
+  color: #b3bcc5;
+  font-size: 14px;
+}
+
+.menu dt {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+.menu dd {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+.menu dd {
+  padding-left: 20px;
+}
+
+.menu dd.active {
+  background-color: #ddd;
+  color: #354457;
+}
+
+.menu dd:not(.active):hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #354457;
+}
+
+/* 内容 */
+.content {
+  overflow: hidden;
+  min-height: 100%;
+  background-color: #eee;
+}
+.container {
+  width: 100%;
+  height: calc(100% - 70px);
+}
+
+/* 新增学生 */
+
+.student-add {
+  width: 500px;
+  margin: 50px auto;
+  display: none;
+}
+
+.student-add form>div {
+  margin-bottom: 16px;
+}
+
+.student-add form>div label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 8px;
+}
+
+.student-add form>div label.sex {
+  width: auto;
+}
+
+.student-add form>div .btn {
+  padding: 5px 26px;
+  cursor: pointer;
+}
+.student-add form>div label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 8px;
+}
+
+/* 学生列表 */
+.student-list {
+  width: 100%;
+  min-height: 100%;
+}
+
+.student-list table {
+  width: 100%;
+}
+
+.student-list table thead {
+  background-color: #e3e8ee;
+}
+
+
+.student-list table tr .btn.edit {
+  background-color: #5cb85c;
+}
+
+.student-list table tr .btn.delete {
+  background-color: #d9534f;
+}
+
+.trun-page {
+  text-align: center;
+}
+
+.trun-page button {
+  display: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* 编辑弹框 */
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.student-list table tbody {
+  background-color: #fff;
+}
+
+.student-list table tr {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.student-list table tr .btn {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+.modal .modal-content {
+  position: fixed;
+  width: 500px;
+  height: 460px;
+  left: 50%;
+  top: 50%;
+  margin: -262px 0 0 -250px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.modal .modal-content h3 {
+  margin-bottom: 30px;
+}
+
+.modal .modal-content form {
+  width: 380px;
+  margin: 0 auto;
+}
+
+.modal .modal-content form div {
+  margin-bottom: 16px;
+}
+
+.modal .modal-content form label:not(.sex) {
+  display: inline-block;
+  text-align: right;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.modal .modal-content form .btn {
+  padding: 5px 60px;
+}
+
+.student-list #query-btn {
+  position: fixed;
+  width: 60px;
+}
